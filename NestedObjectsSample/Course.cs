@@ -48,6 +48,19 @@ namespace NestedObjectsSample
         /// </summary>
         public List<Student> Roster { get; set; }
 
+        /// <summary>
+        /// What to display
+        /// </summary>
+        public string CourseDisplay
+        {
+            get
+            {
+                return $"{CourseNumber} {Title}";
+            }
+            // no set, just for display purposes
+        }
+
+
 
     }
 }
